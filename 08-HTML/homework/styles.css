@@ -1,0 +1,25 @@
+body{
+    background-image: url(img/fondo.jpg);
+}
+h1{
+    color: darkslategray;
+}
+div{
+    margin: auto;
+}
+img{
+    width: 400px;
+}
+#fondo{
+}
+#thirdDiv{
+    height: 600px;
+    width: 500px;
+    padding: 50px;
+    border: 10px solid black ;
+    background-color: aquamarine;
+}
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+}
