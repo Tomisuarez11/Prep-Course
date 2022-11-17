@@ -1,0 +1,73 @@
+¿Qué es el for?
+
+El for es una palabra reservada que puede hacer que haga
+una misma actividad las veces que uno quiera.
+Su estructura es la siguiente: for -> la palabra reservada, seguida de unos parentesis donde van 3 cosas
+for(declaración de variable ; condición ; incremento de la variable), en la primera posición debemos decirle al ciclo
+DESDE que numero debe comenzar la función. En la segunda posición debemos indicarle HASTA que numero debe llegar la variable
+para que el ciclo finalice. Por ultimo, en la tercera posición debemos indicarle si la variable va a sumar de 1 en 1 (ej:i++) o 
+debe restar de 1 en 1(ej: 1--). Luego de colocar todo esto, sigue un abrir y cerrar de llaves ({}) donde dentro de estas colocaremos
+la acción que queremos que realice cada vez que se repita la condición que pusimos.
+Un ejemplo de como sería:
+for (let i = 0; i <= 10; i++){
+    console.log(i);
+}
+Como podemos ver, primero utilicé la palabra "for", luego la seguí del parentesis que me pide las 3 cosas que explicamos
+declare una variable de tipo "let" llamada "i" y le asigne el valor de 0, luego le puse la condición que en este caso
+quiero que el ciclo finalice cuando la variable "i" llegue a 10. Por ultimo, asigné "i++" para que la
+variable incremente de 1 en 1 para que asi luego se cumpla la condición para finalizar el ciclo.
+Luego de haber creado el ciclo, asigné lo que queremos que haga en este caso 10 veces, que se imprima por la consola
+el valor de "i". Es decir que cuando ejecute el programa, este va a imprimir los numeros del 1 al 10.
+
+¿Cómo funcionan &&, || y !?
+
+Antes de saber como funcionan estos simbolos, debemos saber que son los "operadores lógicos",
+Un operador lógico nos permite trabajar con booleanos (true o false), es decir con situaciones que pueden ser
+verdaderas o falsas. En la mayoría de las veces, utilizamos operadores lógicos cuando utilizamos el "if",
+como sabemos if es una funcion condicional que a partir de una condición que pone el programador este decide si realizar una acción o no.
+Los operadores lógicos nos permiten combinar las condiciones, juntarlas o como se dice en este ámbito "anidarlas".
+Algunos de los operadores lógicos son:
+
+&& : Funciona como la letra "y", es un operador lógico que si en el if se cumplen las condiciones que estén anidadas
+con "&&" funcionará, caso contrario este no hara nada.
+Ejemplo:
+if(42 === 42 && 12 === 12){
+    console.log("Esto es cierto ya que 42 es igual a 42 y 12 es igual a 12 por lo que ambas condiciones se cumplen.");
+}
+if(42 === 42 && 12 === 10){
+    console.log("Esto no es cierto porque 42 si es igual a 42 pero 12 no es igual a 10 por lo que una condicion no se cumple.")
+
+}
+Para facilitar la compresión lo traduzco a lenguaje humano:
+SI (ESTA CONDICIÓN SE CUMPLE  "Y"  ESTA TAMBIÉN){
+    Acción;
+}
+
+|| : Funciona como la letra "o", es un operador lógico que si en el if se cumple alguna de las condiciones anidadas
+entonces el if funcionará, si no se cumple ninguna este no hará nada.
+Ejemplo:
+if(42 === 42 || 12 === 10){
+    console.log("Este if se cumple ya que 42 es igual a 42.);
+}
+if(42 === 49 || 12 === 10){
+    console.log("Este if no se cumple ya que ni 42 es igual a 49, ni 12 es igual a 10.");
+}
+Traduccion a lenguaje humano:
+SI(ESTA CONDICION SE CUMPLE "O" ESTA SE CUMPLE){
+    Acción;
+}
+
+! : Funciona como la palabra "NO", es un operador lógico que si su condición es falsa entonces el if se ejecuta, caso contrario no hará nada.
+Es decir, que su pregunta en el if es "SI NO SE CUMPLE ESTA CONDICIÓN" en caso de que no se cumpla la condición entonces el if FUNCIONARÁ, en caso
+de que si se cumpla el if NO FUNCIONARÁ.
+Ejemplo:
+if(!(1 === 2)){
+    console.log("Este if se cumple ya que 1 NO ES IGUAL A 2.");
+} 
+if(!(1 === 1)){
+    console.log("Este if NO se cumple ya que 1 SI ES IGUAL A 1.");
+}
+Traduccion a lenguaje humano:
+SI(NO se cumple esta condición){
+    Acción;
+}
